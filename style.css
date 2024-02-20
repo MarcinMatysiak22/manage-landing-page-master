@@ -17,6 +17,7 @@ body{
 }
 
 .nav{
+    flex-wrap: wrap;
     font-weight: 400;
     margin-top: 2rem;
     margin-inline: 10rem;
@@ -54,7 +55,9 @@ body{
     display: flex;
     margin-inline: 10rem;
     gap: 6rem;
-
+}
+.statistic img{
+    width: clamp(15rem,30vw + 1rem, 50rem);
 }
 .statistic h1{
     color: hsl(228, 39%, 23%);
@@ -93,6 +96,7 @@ body{
 }
 .opinions{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     margin-bottom: 7rem;
@@ -139,6 +143,50 @@ body{
 }
 .foot{
     display: flex;
+    flex-wrap: wrap;
     background-color: hsl(233, 12%, 13%);
     color: hsl(0, 0%, 97%);
+    gap: 2rem;
+    padding-inline: 10rem;
+    padding-block: 3rem;
+}
+.coot{
+    flex: 1;
+}
+.coot.logos{
+    display: flex;
+    flex-direction: column;
+}
+#folog{
+    width: clamp(5rem,9vw + 1rem, 15rem);
+}
+.coot.logos div{
+    margin-top: auto;
+    display: flex;
+    gap: 1rem;
+}
+.coot.update {
+    display: flex;
+    flex-direction: column;
+}
+.coot.update p{
+    margin-top: auto;
+}
+.coot.update div button{
+    align-self: flex-start;
+    padding-block: 0.6rem;
+    padding-inline:1rem;
+    border-radius: 1rem;
+    color: hsl(0, 0%, 98%);
+    background-color: hsl(12, 88%, 59%);
+    border: none;
+}
+.coot.update div input{
+    align-self: flex-start;
+    padding-block: 0.6rem;
+    padding-inline:1rem;
+    border-radius: 1rem;
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(12, 88%, 59%);
+    border: none;
 }
