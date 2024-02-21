@@ -103,11 +103,14 @@ body{
 }
 .listofopinions{
     display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
     gap: 1rem;
     margin-block: 4rem;
 }
 .cards{
     display: flex;
+    flex: 0 0 33vw;
     flex-direction: column;
     text-align: center;
     align-items: center;
