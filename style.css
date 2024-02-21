@@ -35,6 +35,9 @@ body{
     border: none;
     box-shadow: 0 4px 10px hsl(12, 88%, 59%);
 }
+.start:hover{
+    opacity: 0.5;
+}
 .align{
     margin-left: auto;
 }
@@ -50,6 +53,9 @@ body{
     text-decoration: none;
     color:hsl(228, 39%, 23%);
     font-weight: 700;
+}
+.nav a:hover{
+    opacity: 0.5;
 }
 .statistic{
     display: flex;
@@ -94,17 +100,21 @@ body{
 .points div h4{
     color: hsl(228, 39%, 23%);
 }
+#theysaid{
+    text-align: center;
+    color: hsl(228, 39%, 23%);
+    margin-block: 5rem;
+}
 .opinions{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
     flex-direction: column;
     align-items: center;
     margin-bottom: 7rem;
 }
 .listofopinions{
     display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
     gap: 1rem;
     margin-block: 4rem;
 }
@@ -124,12 +134,17 @@ body{
     width: 4rem;
     translate: 0px -20px;
 }
+.start.abovefoot{
+    display: block;
+    margin: 0 auto; 
+    margin-bottom: 5rem;
+}
 .simplify{
     display: flex;
     padding-inline: 10rem;
     background-color: hsl(12, 88%, 59%);
 }
-.simplify h3{
+.simplify h1{
     color: hsl(0, 0%, 97%);
     padding-block: 1rem;
 }
@@ -154,11 +169,18 @@ body{
     padding-block: 3rem;
 }
 .coot{
-    flex: 1;
-}
-.coot.logos{
     display: flex;
     flex-direction: column;
+    gap: 1rem;
+    flex: 1;
+}
+.coot a{
+    color: hsl(0, 0%, 98%);
+    text-decoration: none;
+    width: fit-content;
+}
+.coot a:hover{
+    color: hsl(12, 88%, 59%);
 }
 #folog{
     width: clamp(5rem,9vw + 1rem, 15rem);
@@ -167,6 +189,9 @@ body{
     margin-top: auto;
     display: flex;
     gap: 1rem;
+}
+.coot.logos div svg path:hover{
+    fill: hsl(12, 88%, 59%);
 }
 .coot.update {
     display: flex;
@@ -183,6 +208,9 @@ body{
     color: hsl(0, 0%, 98%);
     background-color: hsl(12, 88%, 59%);
     border: none;
+}
+.coot.update div button:hover{
+    filter: brightness(140%);
 }
 .coot.update div input{
     align-self: flex-start;
