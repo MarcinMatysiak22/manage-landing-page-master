@@ -108,10 +108,13 @@ body{
 .opinions{
     display: flex;
     flex-wrap: nowrap;
-    overflow-x: scroll;
+    overflow-x: auto;
     flex-direction: column;
     align-items: center;
     margin-bottom: 7rem;
+}
+.opinions::-webkit-scrollbar {
+    display: none;
 }
 .listofopinions{
     display: flex;
